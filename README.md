@@ -40,6 +40,11 @@ Listen on port
 nc IP PORT -lvnp
 ```
 
+Listen throuh metsploit
+```
+use exploit/multi/handler
+```
+
 ### Find Exploits with SearchSploit
 
 ```
