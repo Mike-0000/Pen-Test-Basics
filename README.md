@@ -9,13 +9,13 @@ To Open metasploit console
 ## Port Scan
 
 ```
-nmap IP -sV -sC -p- --min-rate 20000
+nmap -sV -sC -p- --min-rate 20000 IP
 ```
 
 alternate
 
 ```
-nmap IP -T4 -A -v
+nmap -T4 -A -v IP
 ```
 
 -p- to scan all ports
