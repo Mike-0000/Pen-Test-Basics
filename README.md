@@ -28,9 +28,15 @@ NetCat
 
 ```searchsploit servicename version```
 
+### Metadata
+
+```exiftool file```
+
 ### Web Server:
 
-### Directory Discovery
+
+
+#### Directory Discovery
 
 Word lists are at `/usr/share/wordlists` (In KALI)
 
