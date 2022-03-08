@@ -49,7 +49,12 @@ Word lists are at `/usr/share/wordlists` (In KALI)
 
 ```gobuster dir -u URL:port -t threads -w /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt```
 
+#### Replicate website on local storage
+
+```wget http://ip/ -r```
+
 #### Wordpress vulnerability checker
+
 ```wpscan --url URL```
 
 
