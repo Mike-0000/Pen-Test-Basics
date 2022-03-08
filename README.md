@@ -15,11 +15,17 @@ To Open metasploit console
 -sV to show services related to each port
 
 
-####Web Server:
+####Get Version of Service
 
-#####Directory Discovery
+NetCat
+```nc IP PORT```
 
-Word lists are at `/usr/share/wordlists`
+
+###Web Server:
+
+####Directory Discovery
+
+Word lists are at `/usr/share/wordlists` (In KALI)
 
 ```gobuster dir -u URL:port -t threads -w <word list location>```
 
@@ -30,3 +36,26 @@ Word lists are at `/usr/share/wordlists`
 
 ```run post/multi/recon/local_exploit_suggester```
 Gives readout of possible vulnerabilities of connected host
+
+### NFS (RPCBIND?)
+
+Enumerate NFS shares.
+
+```nmap -p 111 --script=nfs-ls,nfs-statfs,nfs-showmount 10.10.223.98```
+
+
+
+### Samba share
+
+```nmap -p 445 --script=smb-enum-shares.nse,smb-enum-users.nse IP```
+Change port to match nmap results. (Usually 139 or 445)
+
+
+##### Inspect Samba Share
+
+```smbclient //ip/sambashare```
+
+
+You can recursively download the SMB share too.
+
+```smbget -R smb://ip/sambashare```
