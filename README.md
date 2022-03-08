@@ -4,9 +4,9 @@
 
 To Open metasploit console
 
-## Starting Penetration
+# Starting Penetration
 
-### Port Scan
+## Port Scan
 
 ```nmap IP  -sV --min-rate 20000```
 
@@ -17,7 +17,7 @@ To Open metasploit console
 -sV to show services related to each port
 
 
-#### Get Version of Service
+### Get Version of Service
 
 NetCat
 
@@ -26,22 +26,22 @@ NetCat
 
 ### Web Server:
 
-#### Directory Discovery
+### Directory Discovery
 
 Word lists are at `/usr/share/wordlists` (In KALI)
 
 ```gobuster dir -u URL:port -t threads -w <word list location>```
 
 
-## Attempt to Elevate permissions after entry
+# Attempt to Elevate permissions after entry
 
-##### Run Inside of Meterpreter
+#### Run Inside of Meterpreter
 
 ```run post/multi/recon/local_exploit_suggester```
 
 Gives readout of possible vulnerabilities of connected host
 
-### NFS (RPCBIND?)
+## NFS (RPCBIND?)
 
 Enumerate NFS shares.
 
@@ -49,18 +49,18 @@ Enumerate NFS shares.
 
 
 
-### Samba share
+## Samba share
 
 ```nmap -p 445 --script=smb-enum-shares.nse,smb-enum-users.nse IP```
 
 Change port to match nmap results. (Usually 139 or 445)
 
 
-##### Inspect Samba Share
+### Inspect Samba Share
 
 ```smbclient //ip/sambashare```
 
 
-You can recursively download the SMB share too.
+### Recursively download the SMB share
 
 ```smbget -R smb://ip/sambashare```
