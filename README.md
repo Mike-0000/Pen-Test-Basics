@@ -24,7 +24,7 @@ NetCat
 
 ### Find Exploits with SearchSploit
 
-```seartchsploit servicename version```
+```searchsploit servicename version```
 
 ### Web Server:
 
