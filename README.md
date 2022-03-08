@@ -22,6 +22,10 @@ NetCat
 ```nc IP PORT```
 
 
+### Find Exploits with SearchSploit
+
+```seartchsploit servicename version```
+
 ### Web Server:
 
 ### Directory Discovery
@@ -29,6 +33,13 @@ NetCat
 Word lists are at `/usr/share/wordlists` (In KALI)
 
 ```gobuster dir -u URL:port -t threads -w <word list location>```
+
+
+## SSH
+
+### SSH with RSA file
+
+```ssh -i /path/to/file user@IP```
 
 
 ## Attempt to Elevate permissions after entry
@@ -44,6 +55,15 @@ Gives readout of possible vulnerabilities of connected host
 Enumerate NFS shares.
 
 ```nmap -p 111 --script=nfs-ls,nfs-statfs,nfs-showmount 10.10.223.98```
+
+
+### Linux Specific
+
+#### Search for SUID Bit files
+
+SUID Bit - User executes the file with permissions of the file owner
+
+```find / -perm -u=s -type f 2>/dev/null```
 
 
 
@@ -62,3 +82,4 @@ Change port to match nmap results. (Usually 139 or 445)
 #### Recursively download the SMB share
 
 ```smbget -R smb://ip/sambashare```
+
