@@ -52,7 +52,7 @@ Word lists are at `/usr/share/wordlists` (In KALI)
 
 #### Brute Forcing Passwords
 
-```hydra -l USER -P /path/to/wordlist```
+```hydra -l USER -P /path/to/wordlist ssh://IP```
 
 https://github.com/danielmiessler/SecLists/tree/master/Passwords/Common-Credentials
 
