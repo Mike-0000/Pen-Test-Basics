@@ -158,6 +158,14 @@ nmap -p 111 --script=nfs-ls,nfs-statfs,nfs-showmount 10.10.223.98
 
 whoami
 
+#### Search specific word
+
+```grep -n "WORD" /path/to/file(s)```
+-n lists line number
+-r - recursively check all files matching path
+-B # - Prints this many lines before
+-A # - Prints this many lines after
+
 #### LinPEAS
 
 https://github.com/carlospolop/PEASS-ng/releases
