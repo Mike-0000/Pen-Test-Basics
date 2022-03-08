@@ -31,15 +31,15 @@ Word lists are at `/usr/share/wordlists` (In KALI)
 ```gobuster dir -u URL:port -t threads -w <word list location>```
 
 
-# Attempt to Elevate permissions after entry
+## Attempt to Elevate permissions after entry
 
-#### Run Inside of Meterpreter
+##### Run Inside of Meterpreter
 
 ```run post/multi/recon/local_exploit_suggester```
 
 Gives readout of possible vulnerabilities of connected host
 
-## NFS (RPCBIND?)
+### NFS (RPCBIND?)
 
 Enumerate NFS shares.
 
@@ -47,18 +47,18 @@ Enumerate NFS shares.
 
 
 
-## Samba share
+### Samba share
 
 ```nmap -p 445 --script=smb-enum-shares.nse,smb-enum-users.nse IP```
 
 Change port to match nmap results. (Usually 139 or 445)
 
 
-### Inspect Samba Share
+#### Inspect Samba Share
 
 ```smbclient //ip/sambashare```
 
 
-### Recursively download the SMB share
+#### Recursively download the SMB share
 
 ```smbget -R smb://ip/sambashare```
