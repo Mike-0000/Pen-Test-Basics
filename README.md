@@ -87,6 +87,15 @@ Enumerate NFS shares.
 
 ### Linux Specific
 
+#### LinPEAS
+
+https://github.com/carlospolop/PEASS-ng/releases
+
+Only need linpeas.sh
+
+```scp /home/mike/linpeas.sh USER@IP:/home/USER```
+```./linpeas.sh```
+
 #### Search for SUID Bit files
 
 SUID Bit - User executes the file with permissions of the file owner
