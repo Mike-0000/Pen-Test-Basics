@@ -79,6 +79,9 @@ https://github.com/danielmiessler/SecLists/tree/master/Passwords/Common-Credenti
 
 
 
+
+
+
 ## Attempt to Elevate permissions after entry
 
 ##### Run Inside of Meterpreter
@@ -96,6 +99,8 @@ Enumerate NFS shares.
 
 
 ### Linux Specific
+
+whoami
 
 #### LinPEAS
 
