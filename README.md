@@ -6,7 +6,9 @@ To Open metasploit console
 
 ## Port Scan
 
-```nmap IP  -sV --min-rate 20000```
+```nmap IP -sV -sC -p- --min-rate 20000```
+
+-p- to scan all ports
 
 20k rate probably way too high. Reduce to reduce risk of alerting firewall.
 
@@ -32,7 +34,7 @@ NetCat
 
 Word lists are at `/usr/share/wordlists` (In KALI)
 
-```gobuster dir -u URL:port -t threads -w <word list location>```
+```gobuster dir -u URL:port -t threads -w /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt```
 
 
 ## SSH
