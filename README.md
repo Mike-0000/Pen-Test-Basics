@@ -50,6 +50,14 @@ Word lists are at `/usr/share/wordlists` (In KALI)
 ```ssh -i /path/to/file user@IP```
 
 
+#### Brute Forcing Passwords
+
+```hydra -l USER -P /path/to/wordlist```
+
+https://github.com/danielmiessler/SecLists/tree/master/Passwords/Common-Credentials
+
+
+
 ## Attempt to Elevate permissions after entry
 
 ##### Run Inside of Meterpreter
@@ -65,6 +73,7 @@ Enumerate NFS shares.
 ```nmap -p 111 --script=nfs-ls,nfs-statfs,nfs-showmount 10.10.223.98```
 
 
+
 ### Linux Specific
 
 #### Search for SUID Bit files
@@ -77,9 +86,15 @@ SUID Bit - User executes the file with permissions of the file owner
 
 ### Samba share
 
+##### Quick Enumeration
+
 ```nmap -p 445 --script=smb-enum-shares.nse,smb-enum-users.nse IP```
 
 Change port to match nmap results. (Usually 139 or 445)
+
+##### Deep Enumeration
+
+```enum4linux -a IP | tee enum4linux.log```
 
 
 #### Inspect Samba Share
