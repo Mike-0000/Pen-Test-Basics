@@ -1,16 +1,22 @@
 # Starting Penetration
 
-```msfconsole```
+```
+msfconsole
+```
 
 To Open metasploit console
 
 ## Port Scan
 
-```nmap IP -sV -sC -p- --min-rate 20000```
+```
+nmap IP -sV -sC -p- --min-rate 20000
+```
 
 alternate
 
-```nmap IP -T4 -A -v```
+```
+nmap IP -T4 -A -v
+```
 
 -p- to scan all ports
 
@@ -25,7 +31,9 @@ alternate
 
 NetCat
 
-```nc IP PORT```
+```
+nc IP PORT
+```
 
 
 ### Find Exploits with SearchSploit
@@ -36,13 +44,17 @@ NetCat
 
 Get path from searchsploit
 
-```curl http://www.exploit-db.com/download/ID  /root/.msf4/modules/exploits/custom/CUSTOMFILENAME```
+```
+curl http://www.exploit-db.com/download/ID  /root/.msf4/modules/exploits/custom/CUSTOMFILENAME
+```
 
 
 
 ### Metadata
 
-```exiftool file```
+```
+exiftool file
+```
 
 ### Web Server:
 
@@ -51,15 +63,21 @@ Get path from searchsploit
 
 Word lists are at `/usr/share/wordlists` (In KALI)
 
-```gobuster dir -u URL:port -t threads -w /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt```
+```
+gobuster dir -u URL:port -t threads -w /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt
+```
 
 #### Replicate website on local storage
 
-```wget http://ip/ -r```
+```
+wget http://ip/ -r
+```
 
 #### Wordpress vulnerability checker
 
-```wpscan --url URL```
+```
+wpscan --url URL
+```
 
 --plugin-detection aggressive    -   Takes a long time, but digs up good dirt
 
@@ -68,12 +86,16 @@ Word lists are at `/usr/share/wordlists` (In KALI)
 
 ### SSH with RSA file
 
-```ssh -i /path/to/file user@IP```
+```
+ssh -i /path/to/file user@IP
+```
 
 
 #### Brute Forcing Passwords
 
-```hydra -l USER -P /path/to/wordlist ssh://IP```
+```
+hydra -l USER -P /path/to/wordlist ssh://IP
+```
 
 https://github.com/danielmiessler/SecLists/tree/master/Passwords/Common-Credentials
 
@@ -101,7 +123,9 @@ jar -cvf ../wshell.war *
 
 ##### Run Inside of Meterpreter
 
-```run post/multi/recon/local_exploit_suggester```
+```
+run post/multi/recon/local_exploit_suggester
+```
 
 Gives readout of possible vulnerabilities of connected host
 
@@ -109,7 +133,9 @@ Gives readout of possible vulnerabilities of connected host
 
 Enumerate NFS shares.
 
-```nmap -p 111 --script=nfs-ls,nfs-statfs,nfs-showmount 10.10.223.98```
+```
+nmap -p 111 --script=nfs-ls,nfs-statfs,nfs-showmount 10.10.223.98
+```
 
 
 
@@ -123,14 +149,20 @@ https://github.com/carlospolop/PEASS-ng/releases
 
 Only need linpeas.sh
 
-```scp /home/mike/linpeas.sh USER@IP:/home/USER```
-```./linpeas.sh```
+```
+scp /home/mike/linpeas.sh USER@IP:/home/USER
+```
+```
+./linpeas.sh
+```
 
 #### Search for SUID Bit files
 
 SUID Bit - User executes the file with permissions of the file owner
 
-```find / -perm -u=s -type f 2>/dev/null```
+```
+find / -perm -u=s -type f 2>/dev/null
+```
 
 
 
@@ -138,18 +170,24 @@ SUID Bit - User executes the file with permissions of the file owner
 
 ##### Quick Enumeration
 
-```nmap -p 445 --script=smb-enum-shares.nse,smb-enum-users.nse IP```
+```
+nmap -p 445 --script=smb-enum-shares.nse,smb-enum-users.nse IP
+```
 
 Change port to match nmap results. (Usually 139 or 445)
 
 ##### Deep Enumeration
 
-```enum4linux -a IP | tee enum4linux.log```
+```
+enum4linux -a IP | tee enum4linux.log
+```
 
 
 #### Inspect Samba Share
 
-```smbclient //ip/sambashare```
+```
+smbclient //ip/sambashare
+```
 
 
 #### Recursively download the SMB share
