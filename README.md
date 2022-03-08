@@ -35,6 +35,10 @@ NetCat
 nc IP PORT
 ```
 
+Listen on port
+```
+nc IP PORT -lvnp
+```
 
 ### Find Exploits with SearchSploit
 
