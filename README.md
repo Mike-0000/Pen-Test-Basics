@@ -5,7 +5,7 @@ To Open metasploit console
 
 ## Starting Penetration
 
-###Port Scan
+### Port Scan
 
 ```nmap IP  -sV --min-rate 20000```
 
@@ -15,15 +15,15 @@ To Open metasploit console
 -sV to show services related to each port
 
 
-####Get Version of Service
+#### Get Version of Service
 
 NetCat
 ```nc IP PORT```
 
 
-###Web Server:
+### Web Server:
 
-####Directory Discovery
+#### Directory Discovery
 
 Word lists are at `/usr/share/wordlists` (In KALI)
 
@@ -32,7 +32,7 @@ Word lists are at `/usr/share/wordlists` (In KALI)
 
 ## Attempt to Elevate permissions after entry
 
-#####Run Inside of Meterpreter
+##### Run Inside of Meterpreter
 
 ```run post/multi/recon/local_exploit_suggester```
 Gives readout of possible vulnerabilities of connected host
