@@ -180,6 +180,13 @@ find / -perm -u=s -type f 2>/dev/null
 ```
 
 
+### FTP
+
+Replicate entire FTP
+```
+wget -m ftp://anonymous:anonymous@IP
+```
+
 
 ### Samba share
 
