@@ -38,7 +38,9 @@ nc IP PORT
 
 ### Find Exploits with SearchSploit
 
-```searchsploit servicename version```
+```
+searchsploit servicename version
+```
 
 ### Add new modules to metasploit from exploit-db
 
@@ -192,5 +194,7 @@ smbclient //ip/sambashare
 
 #### Recursively download the SMB share
 
-```smbget -R smb://ip/sambashare```
+```
+smbget -R smb://ip/sambashare
+```
 
