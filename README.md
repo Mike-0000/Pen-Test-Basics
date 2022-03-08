@@ -8,6 +8,10 @@ To Open metasploit console
 
 ```nmap IP -sV -sC -p- --min-rate 20000```
 
+alternate
+
+```nmap IP -T4 -A -v```
+
 -p- to scan all ports
 
 20k rate probably way too high. Reduce to reduce risk of alerting firewall.
