@@ -1,6 +1,7 @@
 # Pen-Test-Basics
  
 ```msfconsole```
+
 To Open metasploit console
 
 ## Starting Penetration
@@ -12,12 +13,14 @@ To Open metasploit console
 20k rate probably way too high. Reduce to reduce risk of alerting firewall.
 
 -sS for TCP SYN Scan
+
 -sV to show services related to each port
 
 
 #### Get Version of Service
 
 NetCat
+
 ```nc IP PORT```
 
 
@@ -35,6 +38,7 @@ Word lists are at `/usr/share/wordlists` (In KALI)
 ##### Run Inside of Meterpreter
 
 ```run post/multi/recon/local_exploit_suggester```
+
 Gives readout of possible vulnerabilities of connected host
 
 ### NFS (RPCBIND?)
@@ -48,6 +52,7 @@ Enumerate NFS shares.
 ### Samba share
 
 ```nmap -p 445 --script=smb-enum-shares.nse,smb-enum-users.nse IP```
+
 Change port to match nmap results. (Usually 139 or 445)
 
 
