@@ -28,6 +28,16 @@ NetCat
 
 ```searchsploit servicename version```
 
+## Add new modules to metasploit from exploit-db
+
+Get path from searchsploit
+
+```wget http://www.exploit-db.com/download/ID  /usr/share/metasploit-framework/modules/exploits/PATH```
+
+
+
+
+
 ### Metadata
 
 ```exiftool file```
