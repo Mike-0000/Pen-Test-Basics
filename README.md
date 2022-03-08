@@ -28,13 +28,11 @@ NetCat
 
 ```searchsploit servicename version```
 
-## Add new modules to metasploit from exploit-db
+### Add new modules to metasploit from exploit-db
 
 Get path from searchsploit
 
-```wget http://www.exploit-db.com/download/ID  /usr/share/metasploit-framework/modules/exploits/PATH```
-
-
+```curl http://www.exploit-db.com/download/ID  /root/.msf4/modules/exploits/custom/CUSTOMFILENAME```
 
 
 
@@ -45,12 +43,15 @@ Get path from searchsploit
 ### Web Server:
 
 
-
 #### Directory Discovery
 
 Word lists are at `/usr/share/wordlists` (In KALI)
 
 ```gobuster dir -u URL:port -t threads -w /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt```
+
+#### Wordpress vulnerability checker
+```wpscan --url URL```
+
 
 
 ## SSH
