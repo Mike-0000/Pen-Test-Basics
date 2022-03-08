@@ -57,6 +57,7 @@ Word lists are at `/usr/share/wordlists` (In KALI)
 
 ```wpscan --url URL```
 
+--plugin-detection aggressive    -   Takes a long time, but digs up good dirt
 
 
 ## SSH
