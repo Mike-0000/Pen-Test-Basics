@@ -1,10 +1,8 @@
-# Pen-Test-Basics
- 
+# Starting Penetration
+
 ```msfconsole```
 
 To Open metasploit console
-
-# Starting Penetration
 
 ## Port Scan
 
