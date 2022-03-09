@@ -88,6 +88,12 @@ Word lists are at `/usr/share/wordlists` (In KALI)
 gobuster dir -u URL:port -t threads -w /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt
 ```
 
+Backup:
+
+```
+dirb http://IP/
+```
+
 #### Replicate website on local storage
 
 ```
