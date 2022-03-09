@@ -168,7 +168,9 @@ nmap -p 111 --script=nfs-ls,nfs-statfs,nfs-showmount 10.10.223.98
 
 ### Linux Specific
 
-whoami
+```sudo -l```
+
+```whoami```
 
 #### Search specific word
 
