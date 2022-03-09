@@ -36,10 +36,20 @@ wpscan --url URL
 
 ## WMAP - Map website tool
 
+Load module in msfconsole
 ```
 load wmap
 ```
 
+Add target site
 ```
 wmap_sites -a http://IP
+```
+And
+```
+wmap_targets -t http://ip-address
+```
+Execute
+```
+wmap_run -e
 ```
