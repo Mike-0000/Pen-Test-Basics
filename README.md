@@ -12,7 +12,7 @@ To Open metasploit console
 nmap -sV -sC -p- --min-rate 20000 IP
 ```
 
-alternate
+Alternate
 
 ```
 nmap -T4 -A -v IP
@@ -69,6 +69,14 @@ exiftool file
 
 ### Web Server:
 
+```
+python3 -m http.server PORT
+```
+
+Retrieve:
+```
+wget http://IP:PORT/PATH
+```
 
 #### Directory Discovery
 
