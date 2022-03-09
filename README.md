@@ -105,7 +105,7 @@ wget http://ip/ -r
 https:
 ```
 wget http://ip/ -r --no-check-certificate
-
+```
 #### Wordpress vulnerability checker
 
 ```
