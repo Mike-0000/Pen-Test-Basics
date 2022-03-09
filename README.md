@@ -172,6 +172,16 @@ nmap -p 111 --script=nfs-ls,nfs-statfs,nfs-showmount 10.10.223.98
 
 ```whoami```
 
+##### Run command as specific user
+```
+sudo -u USER command
+```
+
+##### Start shell as specific user
+```
+sudo -u USER bash -i
+```
+
 #### Search specific word
 
 ```grep -n "WORD" /path/to/file(s)```
