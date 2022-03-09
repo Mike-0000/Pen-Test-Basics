@@ -9,13 +9,19 @@ To Open metasploit console
 ## Port Scan
 
 ```
-nmap -sV -sC -O -p- --min-rate 20000 IP
+nmap -sV -sC -O -p- --min-rate 20000 IP > nmap1.txt
 ```
 
-Alternate
+##### Alternate
 
 ```
-nmap -T4 -A -v IP
+nmap -T4 -A -v IP  > nmap2.txt
+```
+
+##### UDP:
+
+```
+nmap -sU -sV IP -F -v > nmap3.txt
 ```
 
 -O - OS Detection
