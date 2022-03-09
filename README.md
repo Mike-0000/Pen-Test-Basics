@@ -28,7 +28,7 @@ nmap -T4 -A -v IP
 
 -sV - to show services related to each port
 
--sU - SLOW - only use if no where to go
+-sU - UDP Scan SLOW - only use if no where to go
 
 
 ### Get Version of Service
