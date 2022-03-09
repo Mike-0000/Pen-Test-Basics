@@ -9,7 +9,7 @@ To Open metasploit console
 ## Port Scan
 
 ```
-nmap -sV -sC -p- --min-rate 20000 IP
+nmap -sV -sC -O -p- --min-rate 20000 IP
 ```
 
 Alternate
@@ -18,13 +18,15 @@ Alternate
 nmap -T4 -A -v IP
 ```
 
--p- to scan all ports
+-O - OS Detection
+
+-p- - to scan all ports
 
 20k rate probably way too high. Reduce to reduce risk of alerting firewall.
 
--sS for TCP SYN Scan
+-sS - for TCP SYN Scan
 
--sV to show services related to each port
+-sV - to show services related to each port
 
 
 ### Get Version of Service
