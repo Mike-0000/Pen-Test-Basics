@@ -122,7 +122,11 @@ wpscan --url URL
 ```
 ssh -i /path/to/file user@IP
 ```
+### Convert id_rsa to crackable
 
+```
+python3 /usr/share/john/ssh2john.py id_rsa > file.txt
+```
 
 #### Brute Forcing Passwords
 
