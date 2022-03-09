@@ -6,12 +6,20 @@ Word lists are at `/usr/share/wordlists` (In KALI)
 gobuster dir -u URL:port -t threads -w /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt
 ```
 
+Search for PHP files
+
+```
+gobuster dir -u http://IP/ -t 80 -w /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt -x php
+```
+
 Backup: (Can get through things ^^^ can't)
 
 ```
 dirb http://IP/
 ```
+
 -X .sh - extensions to search
+
 -w /path/to/wordlist - wordlist
 
 
