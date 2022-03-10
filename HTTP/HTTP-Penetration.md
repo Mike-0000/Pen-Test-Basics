@@ -15,6 +15,10 @@ gobuster dir -u http://IP/ -t 80 -w /usr/share/wordlists/dirbuster/directory-lis
 Backup: (Can get through things ^^^ can't)
 
 ```
+dirsearch -u http://ipaddress
+```
+
+```
 dirb http://IP/
 ```
 
