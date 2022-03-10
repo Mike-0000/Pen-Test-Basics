@@ -9,7 +9,7 @@ To Open metasploit console
 ## Port Scan
 
 ```
-nmap -sV -sC -O -p- --min-rate 20000 IP > nmap1.txt
+nmap -sV -sC -O -p- -v --min-rate 20000 IP > nmap1.txt
 ```
 
 ##### Alternate
