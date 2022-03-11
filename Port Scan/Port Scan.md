@@ -1,24 +1,16 @@
-# Starting Penetration
-
-```
-msfconsole
-```
-
-To Open metasploit console
-
-## Port Scan
+# Port Scan
 
 ```
 nmap -sV -sC -O -p- -v --min-rate 20000 IP > nmap1.txt
 ```
 
-##### Alternate
+### Alternate
 
 ```
 nmap -T4 -A -v IP  > nmap2.txt
 ```
 
-##### UDP:
+### UDP:
 
 ```
 nmap -sU -sV IP -F -v > nmap3.txt
@@ -37,7 +29,7 @@ nmap -sU -sV IP -F -v > nmap3.txt
 -sU - UDP Scan SLOW - only use if no where to go
 
 
-### Get Version of Service
+## Get Version of Service (??)
 
 NetCat
 
