@@ -6,6 +6,12 @@ Word lists are at `/usr/share/wordlists` (In KALI)
 gobuster dir -u URL:port -t threads -w /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt
 ```
 
+## Search for subdomains
+
+```
+wfuzz -w /opt/SecLists/Discovery/DNS/subdomains-top1million-110000.txt -u URL -v -c -H "Host:FUZZ.NAME.htb" --hw 26
+```
+
 Search for PHP files
 
 ```
