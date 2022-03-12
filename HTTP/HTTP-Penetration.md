@@ -11,7 +11,7 @@ gobuster dir -u URL:port -t threads -w /usr/share/wordlists/dirbuster/directory-
 gobuster
 
 ```
-gobuster vhost -u https://NAME.htb -w /opt/SecLists/Discovery/DNS/subdomains-top1million-110000.txt -k -t 40
+gobuster vhost -u http://NAME.htb -w /opt/SecLists/Discovery/DNS/subdomains-top1million-110000.txt -k -t 40
 ```
 
 wfuzz
