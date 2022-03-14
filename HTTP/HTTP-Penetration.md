@@ -8,6 +8,14 @@ gobuster dir -u URL:port -t threads -w /usr/share/wordlists/dirbuster/directory-
 
 ## Search for subdomains
 
+gobuster
+
+```
+gobuster vhost -u http://NAME.htb -w /opt/SecLists/Discovery/DNS/subdomains-top1million-110000.txt -k -t 40
+```
+
+wfuzz
+
 ```
 wfuzz -w /opt/SecLists/Discovery/DNS/subdomains-top1million-110000.txt -u URL -v -c -H "Host:FUZZ.NAME.htb" --hw 26
 ```
